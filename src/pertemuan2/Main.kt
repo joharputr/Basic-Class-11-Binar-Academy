@@ -1,9 +1,11 @@
-fun main(args: Array<String>){
-    println("nama = "+nama)
-    //fun2(); //hasil kosong
- //   println(fun2())
-    jumlah2(4,2)
+package pertemuan1
 
+fun main(args: Array<String>){
+    println("pertemuan1.getNama = "+ nama)
+  //  println("pertemuan1.getNama = "+pertemuan1.getA[1])
+    //pertemuan1.fun2(); //hasil kosong
+ //   println(pertemuan1.fun2())
+    jumlah2(4, 2)
 }
 val  nama: String ="test" //final static
 var angka:Int = 1; //dinamic, memory lebih besar
@@ -28,10 +30,12 @@ fun jumlah1 (x:Any, y:Int){
 }
 //contoh extension function
 fun jumlah2(x:Int, y:Int){
-    val hasil = x.tambah(y)
+    val hasil = x.bagi(y)
     println("hasil $x / $y = $hasil")
 }
 //extension function jangan dibungkus kelas(top level)
- fun Int.tambah(y: Int): Any {
+ fun Int.bagi(y: Int): Any {
 return this/y
 }
+//array
+val a = arrayOf(1,2,3)
